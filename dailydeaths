@@ -1,0 +1,3 @@
+SELECT sum(daily_deaths) as no_of_daily_deaths
+FROM `bigquery-public-data.covid19_ecdc_eu.covid_19_geographic_distribution_worldwide` 
+WHERE month between 6 and 12 AND confirmed_cases > 2000
